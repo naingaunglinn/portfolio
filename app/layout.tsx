@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Titillium_Web } from "next/font/google";
 import "./globals.css";
+import Header from "./header";
+import Footer from "./footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const titillium = Titillium_Web({ 
+  weight: ['200','300','400','600','700','900'], 
+  style:['normal','italic'],
+  subsets:['latin'], 
+  variable: '--font-ti', 
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +22,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const nav = [
+    {
+      name: 'Home',
+      slug: '/'
+    },
+    {
+      name: 'Project',
+      slug: 'project'
+    },
+    {
+      name: 'About',
+      slug: 'about',
+    },
+    {
+      name: 'Contact',
+      slug: 'contact'
+    }
+  ]
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${titillium.variable} p-10`}>
+        <Header nav={nav}/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
