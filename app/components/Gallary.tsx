@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Gallary = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-6 grid-rows-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-6 grid-rows-2 gap-4">
             <div className="row-span-4 col-span-2 grid gap-4">
                 <div>
                     <Image
