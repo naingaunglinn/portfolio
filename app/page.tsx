@@ -34,7 +34,7 @@ export default function Home() {
                         Car rental service is a web application that allows users to book and rent cars online. Users can choose from different car models, insurance options, and guarantor services. The application handles contract creation, quotation generation, product management, delivery inspection, and payment management. The application is built using the Laravel framework and hosted on an Azure cloud server.
                     </p>
                     <div className="mt-20">
-                        <Link href={'/project/1'} className="text-[30px] bg-white text-black transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-sm p-2">Seek more >>></Link>
+                        <Link href={'/project/1'} className="text-[30px] bg-white text-black transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-sm p-2">Seek more `&gt;&gt;&gt;`</Link>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function Home() {
                         We have developed a Horse Support System that allows users to support their favorite horses with donations and rewards. The system is built with database, AWS for the cloud services, and Stripe for the payment processing. The system features a payment system that enables users to donate to horses and receive invoices and receipts, and a point system that allows users to earn points for supporting horses and redeem them for various benefits. The system is designed to be user-friendly, secure, Educationand scalable.
                     </p>
                     <div className="mt-20 text-right">
-                        <Link href={'/project/1'} className="text-[30px] bg-white text-black transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-sm p-2">Seek more >>></Link>
+                        <Link href={'/project/1'} className="text-[30px] bg-white text-black transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-sm p-2">Seek more `&gt;&gt;&gt;`</Link>
                     </div>
                 </div>
                 <div className="col-span-2">
