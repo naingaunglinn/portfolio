@@ -3,6 +3,7 @@ import { Inter, Titillium_Web } from "next/font/google";
 import "./globals.css";
 import Header from "./header";
 import Footer from "./footer";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 const titillium = Titillium_Web({ 
@@ -42,11 +43,13 @@ export default function RootLayout({
     }
   ]
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} ${titillium.variable} p-10`}>
-        <Header nav={nav}/>
-        {children}
-        <Footer/>
+        <Providers>
+          <Header nav={nav}/>
+            {children}
+          <Footer/>
+        </Providers>
       </body>
     </html>
   );
