@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { nav } from "@/types";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 interface navProps {
     nav: nav[]
@@ -15,6 +16,7 @@ const Header = ({nav}:navProps) => {
                             <div key={index} className="px-4 dark:text-white text-black dark:hover:bg-black hover:text-black hover:bg-white dark:hover:text-white hover:rounded-full font-bold "><Link href={content.slug} className="">{content.name}</Link></div>
                         )
                     })}
+                    <div className="px-4 self-center dark:text-white text-black  font-bold "><ThemeSwitch /></div>
                 </div>
             </div>
         </header>
