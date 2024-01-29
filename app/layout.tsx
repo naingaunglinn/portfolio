@@ -44,7 +44,7 @@ export default function RootLayout({
   ]
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`bg-gradient-to-b dark:text-white from-gray-50 dark:from-black to-white dark:to-black ${inter.className} ${titillium.variable} p-10`}>
+      <body className={`bg-gradient-to-b text-black dark:text-white from-gray-50 dark:from-black to-white dark:to-black ${inter.className} ${titillium.variable} p-10`}>
         <Providers>
           <Header nav={nav}/>
             {children}
