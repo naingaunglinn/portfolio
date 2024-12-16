@@ -5,7 +5,11 @@ import Header from "./header";
 import Footer from "./footer";
 import Providers from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'], // Subset of characters you want
+  weight: ['400', '700'], // Specify font weights
+  display: 'swap', // Improve rendering performance
+});
 const titillium = Titillium_Web({ 
   weight: ['200','300','400','600','700','900'], 
   style:['normal','italic'],
