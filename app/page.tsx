@@ -33,7 +33,7 @@ export default function Home() {
                     <p className="text-justify text-[18px] mt-2   ">
                         Car rental service is a web application that allows users to book and rent cars online. Users can choose from different car models, insurance options, and guarantor services. The application handles contract creation, quotation generation, product management, delivery inspection, and payment management. The application is built using the Laravel framework and hosted on an Azure cloud server.
                     </p>
-                    <div className="mt-20">
+                    <div className="mt-8">
                         <Link href={'/project/1'} className="text-[30px] bg-black text-white dark:bg-white dark:text-black transition-colors duration-300 ease-in-out hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white hover:shadow-sm p-2">Seek more &gt;&gt;&gt;</Link>
                     </div>
                 </div>
