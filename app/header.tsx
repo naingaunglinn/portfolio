@@ -8,7 +8,7 @@ interface navProps {
 
 const Header = ({nav}:navProps) => {
     return(
-        <header className="z-10 fixed top-8 w-full">
+        <header className="z-10 fixed right-10">
             <div className="flex justify-center text-[18px] font-ti ">
                 <div className="shadow-sm backdrop-blur-sm dark:bg-white/10 bg-black/30 flex justify-center gap-4 p-2">
                     {nav.map((content,index) => {
