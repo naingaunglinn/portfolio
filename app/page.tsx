@@ -39,8 +39,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="grid grid-cols-5 grid-flow-col gap-4 justify-between pt-4 mt-[100px]">
-                <div className="col-span-3">
-                    <span className="bg-black text-white dark:bg-white dark:text-black px-2 text-[20px] font-bold hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white duration-300 text-right">Uma Owner Horse Management System</span>
+                <div className="col-span-3 text-right">
+                    <span className="bg-black text-white dark:bg-white dark:text-black px-2 text-[20px] font-bold hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white duration-300">Uma Owner Horse Management System</span>
                     <p className="text-justify text-[18px] mt-2   ">
                         We have developed a Horse Support System that allows users to support their favorite horses with donations and rewards. The system is built with database, AWS for the cloud services, and Stripe for the payment processing. The system features a payment system that enables users to donate to horses and receive invoices and receipts, and a point system that allows users to earn points for supporting horses and redeem them for various benefits. The system is designed to be user-friendly, secure, Educationand scalable.
                     </p>
