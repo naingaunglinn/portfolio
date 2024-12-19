@@ -1,10 +1,27 @@
 'use client'
 
+import { imageBounce } from "@/types"
 import { motion } from "motion/react"
+import Image from "next/image"
 
-const ImageBounce = () => {
+interface ImageBounceProps {
+  imageBounce: imageBounce
+}
+
+const ImageBounce = ({imageBounce}:ImageBounceProps) => {
   return (
-    <motion.div>
+    <motion.div
+      initial={imageBounce.animation.initial}
+      animate={imageBounce.animation.animate}
+      transition={imageBounce.animation.transition}
+    >
+      <Image
+        className={imageBounce.className}
+        src={imageBounce.src}
+        alt={imageBounce.alt}
+        width={imageBounce.dimension.width}
+        height={imageBounce.dimension.height} priority={true}
+    />
     </motion.div>
   )
 }
