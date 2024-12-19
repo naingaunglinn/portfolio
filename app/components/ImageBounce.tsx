@@ -9,4 +9,4 @@ const ImageBounce = () => {
   )
 }
 
-export default
+export default ImageBounce;
