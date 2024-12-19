@@ -20,7 +20,7 @@ const ImageBounce = ({imageBounce}:ImageBounceProps) => {
         src={imageBounce.src}
         alt={imageBounce.alt}
         width={imageBounce.dimension.width}
-        height={imageBounce.dimension.height} priority={true}
+        height={imageBounce.dimension.height}
     />
     </motion.div>
   )
