@@ -10,3 +10,18 @@ export interface textBounce {
         y : number
     }    
 }
+
+export interface imageBounce {
+    className: string;
+    src: string;
+    alt: string;
+    dimension: {
+        width: number
+        height: number
+    }
+    animation: {
+        initial: { [key: string]: any }
+        animate: { [key: string]: any }
+        transition: { [key: string]: any }
+    }
+}
