@@ -9,8 +9,8 @@ type props = {
 const HeadTag = ({text}:props) => {
     return (
         <motion.div
-            initial={{ y: 200, opacity: 0}}
-            animate={{ y: 0, opacity: 1}}
+            initial={{ y: 200}}
+            animate={{ y: 0}}
             transition={{ duration: 1.5, type: 'spring', bounce: 0.5, }}
             
         >
