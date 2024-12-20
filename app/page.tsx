@@ -6,7 +6,7 @@ import Main from "./main";
 export default function Home() {
   return (
     <main className="mt-20 font-ti">
-      <div className="grid grid-cols-2 grid-flow-col gap-4 justify-between overflow-hidden">
+      <div className="grid grid-cols-2 grid-flow-col gap-4 justify-between">
         <Main/>
         <div className="row-start-1 row-end-3">
           <Gallary/>
