@@ -4,11 +4,12 @@ export interface nav {
 }
 
 export interface textBounce {
-    text: string
-    direction: {
-        x : number
-        y : number
-    }    
+    text: string;
+    animation: {
+        initial: { [key: string]: any }
+        animate: { [key: string]: any }
+        transition: { [key: string]: any }
+    } 
 }
 
 export interface imageBounce {
